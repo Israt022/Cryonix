@@ -12,7 +12,7 @@ const Logo = ({ size = 24 }: LogoProps) => {
             className="inline-flex w-fit shrink-0 items-center gap-2"
         >
             <Image
-                src="/asset/logo.png"
+                src="/asset/logo.svg"
                 alt="Cryonix logo"
                 width={size}
                 height={size}
