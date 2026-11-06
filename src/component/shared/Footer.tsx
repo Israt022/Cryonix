@@ -3,7 +3,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import Logo from "./Logo";
 
 const footerLinks = [
@@ -41,7 +40,7 @@ const Footer = () => {
                     fill
                     priority
                     sizes="100vw"
-                    className="object-cover object-center"
+                    className="object-fill scale-[1.08] origin-center"
                 />
             </div>
 
@@ -49,7 +48,7 @@ const Footer = () => {
             <div className="container-custom relative z-10 pt-[60px] pb-[24px]">
 
                 {/* Main Footer */}
-                <div className="grid grid-cols-1 gap-12 min-[1100px]:grid-cols-[282px_minmax(0,1fr)] min-[1100px]:gap-x-[284px]">
+                <div className="grid grid-cols-1 gap-12 min-[1100px]:grid-cols-[282px_minmax(0,1fr)] min-[1100px]:gap-x-12 min-[1440px]:gap-x-[284px]">
 
                     {/* Left Section */}
                     <div className="flex h-[127px] w-full max-w-[282px] flex-col">
@@ -65,11 +64,11 @@ const Footer = () => {
                     </div>
 
                     {/* Right Sections */}
-                    <div className="grid grid-cols-2 gap-x-8 gap-y-10 min-[744px]:grid-cols-3 min-[1100px]:gap-x-[100px]">
+                    <div className="grid grid-cols-2 gap-x-8 gap-y-10 min-[744px]:grid-cols-3 min-[744px]:gap-x-12 min-[1440px]:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_358px] min-[1440px]:gap-x-[100px]">
 
                         {/* Learn & Company */}
                         {footerLinks.map((section) => (
-                            <div key={section.title} className="flex flex-col">
+                            <div key={section.title} className="flex min-w-0 flex-col">
 
                                 <h3 className="mb-5 text-xl font-normal text-white">
                                     {section.title}
@@ -91,7 +90,7 @@ const Footer = () => {
                         ))}
 
                         {/* Subscribe */}
-                        <div className="col-span-2 flex flex-col min-[744px]:col-span-1">
+                        <div className="col-span-2 flex min-w-0 flex-col min-[744px]:col-span-1">
 
                             <h3 className="mb-5 text-xl font-normal text-white">
                                 Subscribe
@@ -99,23 +98,25 @@ const Footer = () => {
 
                             <form
                                 onSubmit={(event) => event.preventDefault()}
-                                className="relative h-[60px] w-full max-w-[358px]"
+                                className="relative h-[60px] w-full max-w-[358px] min-[1440px]:w-[358px] min-[1440px]:max-w-none"
                             >
+                                {/* Email Input */}
                                 <input
                                     type="email"
-                                    placeholder="Enter your email"
+                                    placeholder="Enter your email..."
                                     aria-label="Email address"
                                     required
-                                    className="h-full w-full rounded-full border border-white/20 bg-white/5 py-3 pl-5 pr-[140px] text-sm text-white outline-none placeholder:text-white/50 focus:border-white/50"
+                                    className="absolute inset-0 box-border h-full w-full rounded-full border border-white/20 bg-white/5 py-[16px] pl-[32px] pr-[145px] text-base font-normal leading-6 text-white outline-none placeholder:text-white/50 focus:border-white/50"
                                 />
 
+                                {/* Subscribe Button */}
                                 <button
                                     type="submit"
-                                    className="absolute right-1 top-1 inline-flex h-[52px] w-[129px] items-center justify-center gap-1 rounded-[60px] border border-white/30 bg-[radial-gradient(ellipse_at_bottom,#E9917D_0%,#D32800_75%)] text-base font-normal text-white transition-all duration-200 hover:brightness-110"
+                                    className="absolute right-[4px] top-[4px] inline-flex h-[52px] w-[129px] items-center justify-center rounded-[60px] border border-white/30 bg-[radial-gradient(ellipse_at_bottom,#E9917D_0%,#D32800_75%)] text-base font-normal text-white transition-all duration-200 hover:brightness-110"
                                 >
-                                    Subscribe
-                                    <ArrowRight size={14.58} strokeWidth={2} />
+                                    Subscribe Us
                                 </button>
+
                             </form>
 
                         </div>
@@ -123,10 +124,10 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Bottom Divider - 100px Gap */}
+                {/* Bottom Divider */}
                 <div className="mt-[100px] h-px w-full bg-white/30" />
 
-                {/* Bottom Footer - 24px Gap */}
+                {/* Bottom Footer */}
                 <div className="mt-[24px] flex flex-col items-center justify-between gap-5 min-[744px]:flex-row">
 
                     {/* Copyright */}
