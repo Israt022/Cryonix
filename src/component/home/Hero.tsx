@@ -36,30 +36,28 @@ const Hero = () => {
 
             <HeroVisual />
             {/* Hero Bottom Blur Image */}
-            {/* Hero Bottom Blur Image */}
-{/* Hero Bottom Blur Image */}
-<div
-    className="
-        pointer-events-none
-        absolute
-        bottom-0
-        left-1/2
-        z-20
-        h-[448px]
-        w-[2296px]
-        -translate-x-1/2
-    "
-    aria-hidden="true"
->
-    <Image
-        src="/asset/HeroBlur.png"
-        alt=""
-        fill
-        priority
-        sizes="2296px"
-        className="object-fill"
-    />
-</div>
+            <div
+                className="
+                    pointer-events-none
+                    absolute
+                    bottom-0
+                    left-1/2
+                    z-20
+                    h-[448px]
+                    w-[2296px]
+                    -translate-x-1/2
+                "
+                aria-hidden="true"
+            >
+                <Image
+                    src="/asset/HeroBlur.png"
+                    alt=""
+                    fill
+                    priority
+                    sizes="2296px"
+                    className="object-fill"
+                />
+            </div>
         </section>
     );
 };
