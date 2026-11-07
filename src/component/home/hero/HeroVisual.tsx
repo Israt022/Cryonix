@@ -100,18 +100,18 @@ const RightCards = () => (
         {/* Card Balance */}
         <div className="h-[101.19px] rounded-[20px] bg-gradient-to-r from-[#D32800] to-[#DF792C] p-4 shadow-lg shadow-orange-900/20">
             <div className="flex items-center justify-between">
-                <span className="text-xs text-white">Card balance</span>
-                <span className="text-xs text-white/80">**** 8562</span>
+                <span className="text-base font-medium text-white">Card balance</span>
+                <span className="text-base font-medium text-white">**** 8562</span>
             </div>
 
             <div className="mt-2 flex items-center justify-between">
-                <span className="text-lg font-medium text-white">
+                <span className="text-2xl font-semibold text-white">
                     $18,652.11
                 </span>
 
                 <div className="flex -space-x-2">
-                    <span className="size-3 rounded-full bg-[#E51B23]" />
-                    <span className="size-3 rounded-full bg-[#F59E0B]/80" />
+                    <span className="size-4 rounded-full bg-[#E51B23]" />
+                    <span className="size-4 rounded-full bg-[#F59E0B]/80" />
                 </div>
             </div>
         </div>
@@ -120,21 +120,24 @@ const RightCards = () => (
         <div className="mt-[42px] h-[67.13px] rounded-[16px] bg-gradient-to-br from-white/40 via-white/10 to-transparent p-px">
             <div className="flex h-full items-center justify-between rounded-[15px] bg-[#FFFFFF0F] px-3 backdrop-blur-xl">
                 <div className="flex items-center gap-2">
-                    <div className="flex size-7 items-center justify-center rounded-full bg-[#F7931A] text-white">
-                        ₿
-                    </div>
+                    <div className="rounded-full bg-[#F7931A] p-1">
+                            <Bitcoin size={22} strokeWidth={2.5} className="text-white" />
+                        </div>
 
                     <div>
-                        <p className="text-xs text-white">Bitcoin</p>
-                        <p className="text-[9px] text-white/40">(BTC)</p>
+                        <p className="text-base font-semibold text-white">Bitcoin</p>
+                        <p className="text-xs text-white/60">(BTC)</p>
                     </div>
                 </div>
 
                 <Sparkline />
 
                 <div className="text-right">
-                    <p className="text-xs text-white">$0.80%</p>
-                    <p className="text-[9px] text-green-400">+1.40%</p>
+                    <p className="text-base font-semibold text-white">$0.80%</p>
+                    <p className="text-xs text-green-400 flex gap2">
+                        <span>+0.1</span>
+                        <span>+4.00%</span>
+                    </p>
                 </div>
             </div>
         </div>
