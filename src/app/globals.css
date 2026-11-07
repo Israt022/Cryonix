@@ -34,3 +34,35 @@ body {
     padding-inline: 60px;
   }
 }
+
+
+/* Trusted By - Infinite Logo Marquee */
+
+@keyframes trusted-marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.logo-marquee-track {
+    animation: trusted-marquee 38s linear infinite;
+    will-change: transform;
+}
+
+.logo-marquee-reverse {
+    animation-direction: reverse;
+}
+
+.logo-marquee:hover .logo-marquee-track {
+    animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .logo-marquee-track {
+        animation: none;
+    }
+}
