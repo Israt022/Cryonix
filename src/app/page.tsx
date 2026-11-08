@@ -1,4 +1,5 @@
 import About from "@/component/home/About";
+import Cta from "@/component/home/Cta";
 import Faq from "@/component/home/Faq";
 import Features from "@/component/home/Features";
 import Hero from "@/component/home/Hero";
@@ -22,6 +23,7 @@ export default function Home() {
       <Security/>
       <Testimonials/>
       <Faq/>
+      <Cta/>
     </section>
   );
 }
