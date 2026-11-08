@@ -4,9 +4,9 @@ import { infraCards } from "./infrastructure/infraCards";
 
 const Infrastructure = () => {
     return (
-        <section id="infrastructure" className="relative overflow-hidden bg-black py-[100px]">
+        <section id="infrastructure" className="relative overflow-hidden bg-black pb-[100px]">
             {/* container-custom => 60px left/right at 1440 (content = 1320px) */}
-            <div className="container-custom mx-auto max-w-[1440px]">
+            <div className="container-custom mx-auto">
                 <InfrastructureHeader />
 
                 {/* 3 cards (424px each at 1440), gap 24px */}

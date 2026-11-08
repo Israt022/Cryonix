@@ -7,7 +7,7 @@ import HighAvailabilityCard from "./platform/HighAvailabilityCard";
 
 const Platform = () => {
     return (
-        <section id="platform" className="relative overflow-hidden bg-black py-[100px]">
+        <section id="platform" className="relative overflow-hidden bg-black pb-[100px]">
             {/* container-custom => 60px left/right at 1440 (content = 1320px) */}
             <div className="container-custom mx-auto">
                 <PlatformHeader />
