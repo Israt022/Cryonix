@@ -3,7 +3,7 @@ import { ArrowRight, Sparkle } from "lucide-react";
 
 const SecurityContent = () => {
     return (
-        <div className="flex flex-col items-start lg:ml-[60px] lg:mt-[60px]">
+        <div className="flex flex-col items-start lg:mt-[60px]">
             {/* Badge (same as TrustedBy) */}
             <div className="w-fit rounded-full bg-gradient-to-br from-[#D32800]/40 via-white/10 to-[#D32800]/20 p-px">
                 <div className="flex items-center gap-[7px] rounded-full bg-[#080503] px-6 py-3">
