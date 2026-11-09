@@ -22,9 +22,10 @@ const FaqItem = ({ index, question, answer, isOpen, onToggle }: FaqItemProps) =>
                         aria-hidden="true"
                     />
                     <div
-                        className="pointer-events-none absolute left-[52%] top-0 h-[14px] w-[80px] -translate-x-1/2 bg-gradient-to-b from-[#FF5A1F] to-transparent blur-[2px] [clip-path:polygon(0_0,100%_0,50%_100%)]"
+                        className="pointer-events-none absolute left-[52%] top-0 h-[14px] w-[80px] -translate-x-1/2 bg-[linear-gradient(to_bottom,#FF5A1F_0%,#FF8B55_25%,#FFE5D5_48%,#FF8B55_70%, blur-[2px] [clip-path:polygon(0_0,100%_0,50%_100%)]"
                         aria-hidden="true"
                     />
+
                 </>
             )}
 
@@ -52,9 +53,8 @@ const FaqItem = ({ index, question, answer, isOpen, onToggle }: FaqItemProps) =>
 
                 <div
                     id={`faq-panel-${index}`}
-                    className={`pointer-events-none col-span-3 grid transition-[grid-template-rows,opacity] duration-300 ease-out lg:col-span-1 lg:col-start-3 lg:row-start-1 ${
-                        isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-                    }`}
+                    className={`pointer-events-none col-span-3 grid transition-[grid-template-rows,opacity] duration-300 ease-out lg:col-span-1 lg:col-start-3 lg:row-start-1 ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                        }`}
                 >
                     <div className="overflow-hidden">
                         <p className="max-w-[495px] pt-4 text-base font-normal leading-[1.7] text-white/90 lg:pt-0">

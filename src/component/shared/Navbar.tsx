@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import {
     ArrowRight,
@@ -20,9 +20,28 @@ const navLinks = [
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 20);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
-        <header className="relative z-50 w-full bg-transparent">
+        <header
+            // className="relative z-50 w-full bg-transparent"
+            className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled
+                    ? "border-b border-white/10 bg-black/60 shadow-lg backdrop-blur-xl"
+                    : "border-b border-transparent bg-transparent"
+                }`}
+        >
             <nav className="container-custom flex items-center justify-between py-4">
 
                 {/* Logo */}

@@ -22,7 +22,8 @@ const DashboardPanel = () => {
             {/* Inner gap 18px, panel padding 28px */}
             <div className="flex flex-col gap-[18px] rounded-[27px] bg-[radial-gradient(ellipse_at_100%_30%,rgba(211,40,0,0.1)_0%,transparent_55%),linear-gradient(180deg,#140808_0%,#0e0606_100%)] p-7">
                 {/* Row 1: 335 + 205 */}
-                <div className="grid grid-cols-1 gap-[18px] md:grid-cols-[335px_205px]">
+                {/* <div className="grid grid-cols-1 gap-[18px] md:grid-cols-[335px_205px]"> */}
+                <div className="grid grid-cols-1 gap-[18px] md:grid-cols-[minmax(0,1.63fr)_minmax(0,1fr)]">
                     <TotalBalanceCard />
                     <YourCardsCard />
                 </div>

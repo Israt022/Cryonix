@@ -19,7 +19,7 @@ const Sparkline = () => (
 );
 
 const LeftCards = () => (
-    <div className="absolute left-[5.56%] top-0 z-10 w-[clamp(220px,23.96vw,345px)]">
+    <div className="absolute left-[3.56%] top-0 z-10 w-[clamp(220px,23.96vw,345px)]">
         {/* BTC Balance Card */}
         <div className="h-[195px] rounded-[30px] bg-gradient-to-br from-white/40 via-white/10 to-transparent p-px">
             <div className="h-full rounded-[29px] border border-white/[0.04] bg-[#FFFFFF0F] p-[14px] backdrop-blur-xl">
@@ -95,7 +95,7 @@ const LeftCards = () => (
 );
 
 const RightCards = () => (
-    <div className="absolute right-[5.56%] top-0 z-10 w-[clamp(220px,23.96vw,345px)]">
+    <div className="absolute right-[3.56%] top-0 z-10 w-[clamp(220px,23.96vw,345px)]">
 
         {/* Card Balance */}
         <div className="h-[101.19px] rounded-[20px] bg-gradient-to-r from-[#D32800] to-[#DF792C] p-4 shadow-lg shadow-orange-900/20">
@@ -121,8 +121,8 @@ const RightCards = () => (
             <div className="flex h-full items-center justify-between rounded-[15px] bg-[#FFFFFF0F] px-3 backdrop-blur-xl">
                 <div className="flex items-center gap-2">
                     <div className="rounded-full bg-[#F7931A] p-1">
-                            <Bitcoin size={22} strokeWidth={2.5} className="text-white" />
-                        </div>
+                        <Bitcoin size={22} strokeWidth={2.5} className="text-white" />
+                    </div>
 
                     <div>
                         <p className="text-base font-semibold text-white">Bitcoin</p>
@@ -146,13 +146,14 @@ const RightCards = () => (
 
 const HeroVisual = () => {
     return (
-        <div className="relative z-10 mt-16 w-full">
+        // <div className="relative z-10 mt-16 w-full">
+        <div className="relative z-10 mt-16 w-full min-[780px]:max-[1300px]:!top-[30px]">
 
-            <div className="relative mx-auto w-full max-w-[1440px]">
+            <div className="relative mx-auto w-full">
 
                 {/* Desktop Side Cards */}
                 <div className="relative hidden h-[520px] min-[768px]:block">
-
+                    {/* <div className="relative hidden h-[520px] min-[768px]:block min-[1100px]:max-[1280px]:h-[620px]"> */}
                     <div className="absolute left-0 top-0 w-full">
                         <div className="translate-y-[100px]">
                             <LeftCards />
@@ -164,7 +165,8 @@ const HeroVisual = () => {
                     </div>
 
                     {/* Center Phone */}
-                    <div className="relative z-20 mx-auto w-[clamp(260px,29.2vw,420px)]">
+                    {/* <div className="relative z-20 mx-auto w-[clamp(260px,29.2vw,420px)]"> */}
+                    <div className="relative z-20 mx-auto w-[clamp(260px,29.2vw,420px)] min-[1100px]:max-[1280px]:translate-y-[100px]">
                         <Image
                             src="/asset/HeroMobile.png"
                             alt="Cryonix mobile dashboard"

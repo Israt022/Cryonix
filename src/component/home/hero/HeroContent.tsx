@@ -8,7 +8,7 @@ const HeroContent = () => {
             <HeroBadge />
 
             <div className="mt-8 flex flex-col items-center gap-8">
-                <h1 className="max-w-[850px] text-[42px] leading-[1.08] font-normal tracking-[-2.5px] text-white sm:text-[52px] lg:text-[64px] lg:tracking-[-3px]">
+                <h1 className="test-css max-w-[850px] text-[42px] leading-[1.08] font-normal tracking-[-2.5px] text-white sm:text-[52px] lg:text-[64px] lg:tracking-[-3px]">
                     Better Control of Your
                     <br />
                     Crypto Assets
