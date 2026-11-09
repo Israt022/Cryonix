@@ -9,21 +9,21 @@ const footerLinks = [
     {
         title: "Learn",
         links: [
-            { name: "Blog", href: "/blog" },
-            { name: "Knowledge Base", href: "/knowledge-base" },
-            { name: "Guides", href: "/guides" },
-            { name: "Community", href: "/community" },
-            { name: "Help Center", href: "/help-center" },
+            { name: "Blog", href: "#blog" },
+            { name: "Knowledge Base", href: "#knowledge-base" },
+            { name: "Guides", href: "#guides" },
+            { name: "Community", href: "#community" },
+            { name: "Help Center", href: "#help-center" },
         ],
     },
     {
         title: "Company",
         links: [
-            { name: "About Us", href: "/about" },
-            { name: "Careers", href: "/careers" },
+            { name: "About Us", href: "#about" },
+            { name: "Careers", href: "#careers" },
             { name: "Contact Us", href: "/contact" },
-            { name: "FAQ", href: "/faq" },
-            { name: "Security", href: "/security" },
+            { name: "FAQ", href: "#faq" },
+            { name: "Security", href: "#security" },
         ],
     },
 ];
