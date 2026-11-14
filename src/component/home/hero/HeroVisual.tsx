@@ -19,7 +19,13 @@ const Sparkline = () => (
 );
 
 const LeftCards = () => (
-    <div className="absolute left-[3.56%] top-0 z-10 w-[clamp(220px,23.96vw,345px)]">
+    // <div className="absolute left-[60px] top-0 z-10 w-[calc((100vw-120px-clamp(260px,29.2vw,420px)-136px)/2)]">
+    <div className="
+        absolute left-[20px] top-0 z-10
+        w-[calc((100vw-40px-clamp(260px,29.2vw,420px)-24px)/2)]
+        min-[1100px]:left-[60px]
+        min-[1100px]:w-[calc((100vw-120px-clamp(260px,29.2vw,420px)-136px)/2)]
+    ">
         {/* BTC Balance Card */}
         <div className="h-[195px] rounded-[30px] bg-gradient-to-br from-white/40 via-white/10 to-transparent p-px">
             <div className="h-full rounded-[29px] border border-white/[0.04] bg-[#FFFFFF0F] p-[14px] backdrop-blur-xl">
@@ -95,8 +101,13 @@ const LeftCards = () => (
 );
 
 const RightCards = () => (
-    <div className="absolute right-[3.56%] top-0 z-10 w-[clamp(220px,23.96vw,345px)]">
-
+    // <div className="absolute right-[60px] top-0 z-10 w-[calc((100vw-120px-clamp(260px,29.2vw,420px)-136px)/2)]">
+    <div className="
+        absolute right-[20px] top-0 z-10
+        w-[calc((100vw-40px-clamp(260px,29.2vw,420px)-24px)/2)]
+        min-[1100px]:right-[60px]
+        min-[1100px]:w-[calc((100vw-120px-clamp(260px,29.2vw,420px)-136px)/2)]
+    ">
         {/* Card Balance */}
         <div className="h-[101.19px] rounded-[20px] bg-gradient-to-r from-[#D32800] to-[#DF792C] p-4 shadow-lg shadow-orange-900/20">
             <div className="flex items-center justify-between">
